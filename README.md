@@ -82,7 +82,7 @@ See [`CONTRIBUTING.md`](./CONTRIBUTING.md). All contributors follow the
 
 **Hanif Maulana (Isaac Newton)**
 
-- Website: [https://hanifmaulana-portfolio.vercel.app](https://https://hanifmaulana-portfolio.vercel.app/)
+- Website: [hanifmaulana-portfolio.vercel.app](https://hanifmaulana-portfolio.vercel.app/)
 - GitHub: [github.com/isaacnewton123](https://github.com/isaacnewton123)
 - X: [x.com/isaac_newton252](https://x.com/isaac_newton252)
 - Facebook: [facebook.com/hanif.maulana.108](https://www.facebook.com/hanif.maulana.108/)
