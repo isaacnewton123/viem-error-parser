@@ -1,0 +1,49 @@
+# Dependencies
+node_modules
+.pnpm-store
+
+# Build output
+dist
+build
+out
+.next
+.nuxt
+.vite
+.turbo
+
+# Test / coverage output
+coverage
+.nyc_output
+
+# TypeScript incremental build
+.tsbuildinfo
+*.tsbuildinfo
+
+# Lint / tool caches
+.eslintcache
+.cache
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files (never commit secrets)
+.env
+.env.*
+!.env.example
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea
+.vscode/*
+!.vscode/settings.json
+*.swp
+
+# Wiki lives in a separate *.wiki.git repo; keep its sources local only.
+wiki/

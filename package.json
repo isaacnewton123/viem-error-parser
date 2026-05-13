@@ -1,0 +1,123 @@
+{
+  "name": "viem-error-parser",
+  "version": "0.1.0",
+  "description": "Zero-dependency utility to decode Viem/Wagmi transaction errors into human-readable messages.",
+  "keywords": [
+    "viem",
+    "wagmi",
+    "ethereum",
+    "evm",
+    "error",
+    "revert",
+    "decode",
+    "parser",
+    "typescript"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Hanif Maulana (Isaac Newton)",
+    "url": "https://github.com/isaacnewton123"
+  },
+  "homepage": "https://github.com/isaacnewton123/viem-error-parser#readme",
+  "bugs": {
+    "url": "https://github.com/isaacnewton123/viem-error-parser/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isaacnewton123/viem-error-parser.git"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./react": {
+      "types": "./dist/react.d.ts",
+      "import": "./dist/react.js",
+      "require": "./dist/react.cjs"
+    },
+    "./wagmi": {
+      "types": "./dist/wagmi.d.ts",
+      "import": "./dist/wagmi.js",
+      "require": "./dist/wagmi.cjs"
+    },
+    "./types": {
+      "types": "./dist/types.d.ts",
+      "import": "./dist/types.js",
+      "require": "./dist/types.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=18.17"
+  },
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint \"{src,test}/**/*.{ts,tsx}\"",
+    "lint:fix": "eslint \"{src,test}/**/*.{ts,tsx}\" --fix",
+    "format": "prettier --write \"{src,test,docs,examples}/**/*.{ts,tsx,md,json}\"",
+    "format:check": "prettier --check \"{src,test,docs,examples}/**/*.{ts,tsx,md,json}\"",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist coverage",
+    "prepublishOnly": "npm run lint && npm run typecheck && npm run test && npm run build"
+  },
+  "peerDependencies": {
+    "viem": "^2.0.0",
+    "react": ">=18.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.0",
+    "@types/react": "^18.3.3",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "@vitest/coverage-v8": "^1.6.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-jsdoc": "^48.8.3",
+    "prettier": "^3.3.3",
+    "react": "^18.3.1",
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4",
+    "viem": "^2.21.0",
+    "vitest": "^1.6.0"
+  },
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/isaacnewton123"
+    },
+    {
+      "type": "ko_fi",
+      "url": "https://ko-fi.com/isaacnewton1"
+    },
+    {
+      "type": "individual",
+      "url": "https://trakteer.id/isaacnewton1/link"
+    }
+  ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}

@@ -1,0 +1,58 @@
+# NOTE: package.json declares a "files" whitelist. When present, npm uses
+# "files" and IGNORES this .npmignore file entirely. This file is kept
+# purely as a belt-and-suspenders fallback in case "files" is ever removed
+# or widened. The authoritative list of shipped paths is "files" in
+# package.json (currently: dist, README.md, LICENSE, CHANGELOG.md).
+
+# Sources
+src
+test
+examples
+docs
+wiki
+
+# Tooling / config
+.github
+.vscode
+.idea
+.husky
+.changeset
+.editorconfig
+.eslintrc.json
+.eslintrc.cjs
+.eslintignore
+.eslintcache
+.prettierrc
+.prettierrc.json
+.prettierignore
+tsconfig.json
+tsconfig.*.json
+tsup.config.ts
+tsup.config.*.ts
+vitest.config.ts
+vitest.config.*.ts
+
+# Caches / build artifacts we never want to ship
+coverage
+.nyc_output
+.turbo
+.cache
+.next
+.nuxt
+.vite
+*.tsbuildinfo
+
+# Lockfiles (npm generates its own for the install step)
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+
+# Community / project meta (available on GitHub, not needed in tarball)
+CONTRIBUTING.md
+CODE_OF_CONDUCT.md
+SECURITY.md
+
+# Scratch / misc
+promp.md
+*.log
+.DS_Store
