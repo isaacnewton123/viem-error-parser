@@ -56,7 +56,7 @@ tree.
 
 ## Branches and commits
 
-- Open a feature branch off `main`. Suggested prefix: `feat/`, `fix/`,
+- Open a feature branch off `master`. Suggested prefix: `feat/`, `fix/`,
   `docs/`, `chore/`, `refactor/`, or `test/`.
 - We use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
   for commit messages and PR titles. Examples:
@@ -95,7 +95,7 @@ not enforced as a separate step; ESLint handles formatting via its rules.
 1. Make sure `pnpm run lint`, `pnpm run typecheck`, `pnpm run test`, and
    `pnpm run build` all pass locally.
 2. Add or update an entry in `CHANGELOG.md` under `## [Unreleased]`.
-3. Open a PR against `main`. Fill in the PR template — describe the change,
+3. Open a PR against `master`. Fill in the PR template — describe the change,
    the motivation, and how it was tested.
 4. Be ready for review comments; we aim to respond within a few days.
 5. A maintainer will squash-merge once CI is green and review is approved.
